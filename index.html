@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d19">
+  <title>GitHub Pages is WORKING!</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: #edf3ff;
+      background: radial-gradient(ellipse at 50% 35%, #202b52 0%, #090d19 70%);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main { width: min(100%, 880px); text-align: center; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 14px;
+      border: 1px solid #ffffff25;
+      border-radius: 999px;
+      background: #ffffff08;
+      color: #b8c4df;
+      font: 12px ui-monospace, monospace;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #69f0ae;
+      box-shadow: 0 0 14px #69f0ae88;
+    }
+    h1 { margin: 36px 0 0; font-size: clamp(24px, 5vw, 46px); font-weight: 500; }
+    .stage {
+      display: grid;
+      place-items: center;
+      height: clamp(145px, 29vw, 250px);
+    }
+    .working {
+      display: inline-block;
+      font-size: clamp(45px, 10vw, 110px);
+      font-weight: 950;
+      letter-spacing: -.055em;
+      line-height: 1.2;
+      color: #6ee7ff;
+      text-shadow: 0 0 35px currentColor;
+      animation: pulse 2.4s ease-in-out infinite, colors 7.2s linear infinite;
+    }
+    /* Transform scales the text smoothly without shifting the page layout. */
+    @keyframes pulse {
+      0%, 100% { transform: scale(.55); }
+      50% { transform: scale(1.08); }
+    }
+    @keyframes colors {
+      0%, 100% { color: #6ee7ff; }
+      20% { color: #a78bfa; }
+      40% { color: #ff7dc7; }
+      60% { color: #ffcd70; }
+      80% { color: #79f5b1; }
+    }
+    p { margin: 12px 0; color: #aab7d2; font-size: 15px; line-height: 1.6; }
+    .rule { width: 56px; height: 2px; margin: 12px auto 26px; background: #7386b3; }
+    footer { margin-top: 42px; color: #7283a5; font: 12px ui-monospace, monospace; }
+    @media (prefers-reduced-motion: reduce) {
+      .working { animation: none; text-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge">Deployment successful</div>
+    <h1>GitHub Pages is <span class="stage"><span class="working">WORKING!</span></span></h1>
+    <div class="rule" aria-hidden="true"></div>
+    <p>From commit to the internet. Your page has landed.</p>
+    <footer>ONE FILE. ZERO DEPENDENCIES. ALL SYSTEMS GO.</footer>
+  </main>
+</body>
+</html>
