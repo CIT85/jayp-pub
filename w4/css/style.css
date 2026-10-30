@@ -1,34 +1,37 @@
-/* General Page Styles */
+/*---- General Page Styles */
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Segoe UI", Arial, Helvetica, sans-serif;
 	padding: 20px;
-	background-color: #f4f4f4; /* Default Gray */
+	background-color: #141D2B; /* midnight slate */
+	color: #E8EDF2; /* light gray */
 }
 
-/* SHARED STYLES: All boxes get these rules */
+/*---- Shared Style: All boxes get these rules */
 .swatch {
 	height: 150px;
 	width: 100%;
 	margin-bottom: 20px;
 	padding: 20px;
-	border: 2px solid black; /* Default Border */
+	border: 2px dashed black;
+	border-radius: 15px;
+	box-sizing: border-box;
 	color: white; /* Default text color inside boxes */
 }
 
-/* UNIQUE STYLES: Update the HEX codes below */
-
+/*---- Unique Styles */
 /* 1. Primary Color */
 .primary {
-	background-color: #247C98; /* CHANGE THIS */
+	background-color: #247C98;	/* deep teal blue */
 }
 
 /* 2. Accent Color */
 .accent {
-	background-color: #DCA66B; /* CHANGE THIS */
+	background-color: #DCA66B;	/* soft copper amber */
+	color: #141D2B; /* midnight slate */
 }
 
 /* 3. Text/Light Color */
 .text {
-	background-color: #141D2B; /* CHANGE THIS */
-	color: #E8EDF2; /* Light text for dark background */
+	background-color: #141D2B; /* midnight slate */
+	color: #E8EDF2; /* light gray */
 }
