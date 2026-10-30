@@ -30,5 +30,5 @@ body {
 /* 3. Text/Light Color */
 .text {
 	background-color: #141D2B; /* CHANGE THIS */
-	color: black; /* Dark text for light background */
+	color: #E8EDF2; /* Light text for dark background */
 }
